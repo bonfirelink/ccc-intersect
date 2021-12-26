@@ -28,7 +28,7 @@ module.exports = function (api) {
       start_time: String,
       end_time: String,
       thumbnail: String,
-      
+      day: String
     }
   `)
     addSchemaTypes(`

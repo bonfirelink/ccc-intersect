@@ -18,6 +18,7 @@ module.exports = {
   siteName: 'INTERSECT | An intentional assembly at CCC',
   siteDescription: "An intentional assembly, an ancient tradition, a crossroads where humans stop and gather to reflect before continuing their journey in life.",
   siteUrl: "https://intersect.bonfire.link/",
+  titleTemplate: 'INTERSECT | An intentional assembly at CCC',
   templates: {
     Tag: [{
       path: '/event/tag/:title',
