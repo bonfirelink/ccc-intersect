@@ -1,0 +1,38 @@
+{
+  "name": "hackalong-boilerplate",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "dev": "npm run develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.22",
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security",
+    "graphql-request": "^3.5.0",
+    "gridsome": "^0.7.20",
+    "vue-kinesis": "^1.2.3",
+    "vue-scrollactive": "^0.9.3",
+    "vue-youtube-embed": "^2.2.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.2",
+    "@gridsome/vue-remark": "^0.2.4",
+    "@tailwindcss/typography": "^0.2.0",
+    "animejs": "^3.2.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-pwa": "0.0.18",
+    "moment": "^2.27.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "moment-timezone": "^0.5.31",
+    "netlify-cms": "^2.10.56",
+    "sass": "^1.41.1",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "^1.7.6",
+    "webpack-bundle-analyzer": "^3.8.0"
+  }
+}

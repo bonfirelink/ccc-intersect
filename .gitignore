@@ -1,0 +1,12 @@
+.cache/
+.deploy*/
+dist/
+node_modules/
+public/
+src/.temp/
+src/_drafts/
+
+*.log
+.DS_Store
+db.json
+Thumbs.db
