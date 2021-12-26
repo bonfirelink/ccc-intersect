@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: hack-along/EquinoxUnconf
+
+media_folder: "static/uploads/events"
+public_folder: "/uploads/events"
+
+collections:
+  - name: "event"
+    label: "Event"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "",
+          dateFormat: "YYYY-MM-DD",
+          timeFormat: false,
+          pickerUtc: true,
+          required: false,
+        }
+      - {
+          label: "Start Time (format without seperator eg. 1600 or 1830)",
+          name: "start_time",
+          default: "0000",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "End Time (format without seperator eg. 1600 or 1830)",
+          name: "end_time",
+          default: "0000",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          media_library: { config: { multiple: false } },
+          required: false,
+        }
+      - {
+          label: "Tags (comma seperated list eg: item1, item2)",
+          name: "tags",
+          widget: "list",
+          collection: "tag",
+          valueField: "title",
+          searchFields: ["title"],
+          displayFields: ["title"],
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
