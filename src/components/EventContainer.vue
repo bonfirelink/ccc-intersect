@@ -16,6 +16,8 @@
     <tag-nav notitle />
 
     <event-list
+      :year="year"
+      :archive="archive"
       v-if="$static.events.edges.length > 0"
       :events="$static.events"
     />
@@ -61,6 +63,12 @@ export default {
     title: {
       required: false,
       default: "Agenda",
+    },
+    archive: {
+      default: false,
+    },
+    year: {
+      required: false,
     },
     subtitle: {
       required: false,

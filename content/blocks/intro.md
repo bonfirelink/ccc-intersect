@@ -31,7 +31,7 @@ The [Chaos Communication Congress](https://en.wikipedia.org/wiki/Chaos_Communica
 
 The event is entirely volunteer-driven, guided by an ethos that builds on DIY and hackerspace culture. Every participant is invited to share their knowledge and interests, learn from others, propose activities, work on projects, and in general contribute to the experience of the Congress.
 
-This year's CCC takes place entirely online at [rc3 nowhere](https://rc3.world/), a remote chaos experience.
+This year's CCC is not organized centrally, but let's still make it a decentralized a chaos experience with remote events like Intersect.
 
 > #### Assemblies
 > Here come the engines of Chaos

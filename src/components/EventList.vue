@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Day Filters -->
-    <div class="flex gap-2 mb-4 mt-4 flex-wrap">
+    <div v-if="!archive" class="flex gap-2 mb-4 mt-4 flex-wrap">
       <div
         v-for="filter in dayFilters"
         :key="`filter-day-${filter.value}`"
@@ -185,25 +185,42 @@ export default {
     events: {
       required: true,
     },
+    archive: {
+      default: false,
+    },
+    year: {
+      required: true,
+      default: "2022"
+    }
   },
   data() {
     return {
       dayFilters: [
         { value: "0", label: "Full Program" },
-        { value: "1", label: "Day 1: Monday" },
-        { value: "2", label: "Day 2: Tuesday" },
-        { value: "3", label: "Day 3: Wednesday" },
-        { value: "4", label: "Day 4: Thursday" },
+        { value: "1", label: "Day 1: Tuesday" },
+        { value: "2", label: "Day 2: Wednesday" },
+        { value: "3", label: "Day 3: Thursday" },
+        { value: "4", label: "Day 4: Friday" },
       ],
       day: 0,
     };
   },
   computed: {
-    filteredEvents() {
-      if (this.day == 0) {
-        return this.events.edges;
+    archiveEvents() {
+      if(this.archive) {
+        return this.events.edges.filter((event) => {
+        return event.node.path.includes(`events/past-editions/${this.year}`);
+      });
       }
       return this.events.edges.filter((event) => {
+        return event.node.path.includes(`events/${this.year}`);
+      });
+    },
+    filteredEvents() {
+      if (this.day == 0) {
+        return this.archiveEvents;
+      }
+      return this.archiveEvents.filter((event) => {
         return this.day.includes(event.node.day);
       });
     },

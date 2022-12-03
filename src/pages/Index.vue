@@ -22,6 +22,7 @@
     <div id="program">
       <event-container
         :title="'Program'"
+        year="2022"
       />
     </div>
 

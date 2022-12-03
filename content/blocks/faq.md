@@ -11,8 +11,4 @@ title: I still have questions
 The channels are on the left-hand side under the *INTERSECT* category. The *stage* voice channel is only accessible to speakers. The *dialogue* voice channel is accessible by anyone. Anyone can create additional channels under the *INTERSECT* category. Voice channels have a loudspeaker icon and display participants in them.
 
 #### Where can I find the assembly in the remote chaos experience?
-- At the [rc3 WorkAdventure assembly map](https://rc3.world/2021/room/world-480b/).
-- At the [rc3 assembly page](https://rc3.world/2021/assembly/intersect/).
-
-#### How can I access the remote chaos experience?
-To access [rc3](https://rc3.world/) you need to get [a ticket](https://tickets.events.ccc.de/RC3-21/).
+This year the rc3 is not hosting a centralized event, so you can find us on [bonfire.link](https://bonfire.link) Discord server.
