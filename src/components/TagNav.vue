@@ -11,7 +11,9 @@
         <g-link
           class="badge-link"
           :to="tag.node.path"
-        >{{tag.node.id}} ({{tag.node.belongsTo.totalCount}})</g-link>
+        >{{tag.node.id}}
+         <!-- ({{tag.node.belongsTo.totalCount}}) -->
+        </g-link>
       </div>
     </div>
   </div>

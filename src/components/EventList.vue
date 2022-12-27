@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Day Filters -->
-    <div v-if="!archive" class="flex gap-2 mb-4 mt-4 flex-wrap">
+    <!-- <div v-if="!archive" class="flex gap-2 mb-4 mt-4 flex-wrap">
       <div
         v-for="filter in dayFilters"
         :key="`filter-day-${filter.value}`"
@@ -22,7 +22,7 @@
           {{filter.label}}
         </label>
       </div>
-    </div>
+    </div> -->
     <!-- End Filters -->
 
     <!-- Event List -->
@@ -37,10 +37,16 @@
           :key="`time${index}`"
         >
           <strong class="text-s block">{{ event.node.date | formatDate('dddd, Do MMM') }}</strong>
-          <span
+          <!-- <span
             class="text-3xl leading-5"
             v-html="$options.filters.formatTime(event.node.start_time, false, true)"
-          ></span>
+          ></span> -->
+          <span
+            class="text-3xl leading-5"
+          > TBA </br>
+          <span class="opacity-75">TBA</span> </br>
+          <span class="opacity-50">TBA</span>
+        </span>
         </dt>
         <dd
           class="col-span-2 lg:col-span-4"
@@ -62,7 +68,7 @@
               <!-- CTA Links -->
               <div class="flex">
                 <template v-for="tag in event.node.tags">
-                  <g-link
+                  <!-- <g-link
                     v-if='tag.title=="Talk"'
                     :key="`nav-${tag.id}`"
                     class="text-sm text-gray-400"
@@ -102,7 +108,7 @@ c-189 50 -325 127 -458 258 -189 185 -281 383 -305 650 -13 149 -13 4012 0
 -156 -371 4 -642 362 -549 726 40 157 139 284 288 369 102 57 271 81 394 56z" />
                       </g>
                     </svg>
-                  </g-link>
+                  </g-link> -->
                   <g-link
                     v-if='tag.title=="Convo"'
                     :key="`nav-${tag.id}`"
@@ -155,10 +161,16 @@ c-189 50 -325 127 -458 258 -189 185 -281 383 -305 650 -13 149 -13 4012 0
             v-html="event.node.excerpt"
           />
           <div class="flex mb-1 flex-wrap">
-            <div
+            <!-- <div
               v-if="event.node.day"
               class="badge mb-1"
             > Day {{event.node.day}}
+            </div> -->
+
+            <div
+              v-if="event.node.day"
+              class="badge mb-1"
+            > TAGS
             </div>
             <template v-if="event.node.tags">
               <div

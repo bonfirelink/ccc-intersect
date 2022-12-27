@@ -21,7 +21,7 @@
     <!-- program -->
     <div id="program">
       <event-container
-        :title="'Program'"
+        :title="'Program: Friday 30th'"
         year="2022"
       />
     </div>

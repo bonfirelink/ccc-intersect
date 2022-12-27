@@ -15,10 +15,10 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: 'INTERSECT | An intentional assembly at CCC',
+  siteName: 'INTERSECT | An intentional assembly',
   siteDescription: "An intentional assembly, an ancient tradition, a crossroads where humans stop and gather to reflect before continuing their journey in life.",
   siteUrl: "https://intersect.bonfire.link/",
-  titleTemplate: 'INTERSECT | An intentional assembly at CCC',
+  titleTemplate: 'INTERSECT | An intentional assembly',
   templates: {
     Tag: [{
       path: '/event/tag/:title',
