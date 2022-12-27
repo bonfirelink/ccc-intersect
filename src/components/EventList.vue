@@ -108,7 +108,7 @@ c-189 50 -325 127 -458 258 -189 185 -281 383 -305 650 -13 149 -13 4012 0
                     :key="`nav-${tag.id}`"
                     class="text-sm text-gray-400 flex"
                     title="Join the Conversation"
-                    to="https://discord.gg/5gQJxfX7"
+                    to="https://discord.gg/eQDfQvTmft"
                   >
                     <svg
                       width="20"
