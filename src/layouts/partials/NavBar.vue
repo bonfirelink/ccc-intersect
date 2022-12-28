@@ -61,10 +61,13 @@
           to="/2021"
           class="nav-link"
         >2021 edition</g-link>
+        <!--
         <g-link
           to="https://tv.bonfire.link"
           class="nav-link border-2 border-accent-600 rounded ml-4"
-        >watch</g-link>
+        >watch
+        </g-link>
+        -->
       </scrollactive>
       <!-- End navigation Links-->
     </nav>

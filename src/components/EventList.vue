@@ -43,8 +43,8 @@
           ></span> -->
           <span
             class="text-3xl leading-5"
-          > TBA </br>
-          <span class="opacity-75">TBA</span> </br>
+          > TBA <br>
+          <span class="opacity-75">TBA</span> <br>
           <span class="opacity-50">TBA</span>
         </span>
         </dt>
