@@ -37,16 +37,16 @@
           :key="`time${index}`"
         >
           <strong class="text-s block">{{ event.node.date | formatDate('dddd, Do MMM') }}</strong>
-          <!-- <span
+          <span
             class="text-3xl leading-5"
             v-html="$options.filters.formatTime(event.node.start_time, false, true)"
-          ></span> -->
-          <span
+          ></span>
+          <!-- <span
             class="text-3xl leading-5"
           > TBA <br>
           <span class="opacity-75">TBA</span> <br>
           <span class="opacity-50">TBA</span>
-        </span>
+        </span> -->
         </dt>
         <dd
           class="col-span-2 lg:col-span-4"
