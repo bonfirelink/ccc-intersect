@@ -6,3 +6,5 @@ start_time: 1400
 tags: ["Talk", "Art"]
 day: 1
 ---
+
+🎥 [WATCH RECORDING](https://drive.google.com/file/d/1TlcPjFMznv2szL_cXNRrkAMou14uEJTt)
